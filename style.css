@@ -59,13 +59,14 @@
 #lateral_menu{
     position: relative;
     width: 250px;
-    height: calc(100vh - 100px);
+    height: 88vh;
     background-color: black;
     color: lightgray;
     padding-top: 10px;
     padding-bottom: 20px;
     display: flex;
     flex-direction: column;
+    
 }
 
 .cont_logo{
@@ -118,7 +119,9 @@
 
 .playlist{
     width: 100%;
+    height: 100%;
     margin-left: -4px;
+    position: relative;
     
 }
 
@@ -174,9 +177,8 @@
 }
 .new_playlist{
     width: 100%;
-    height: 280px;
+    height: 40%;
     margin-left: 40px;
-    
     
 }
 .new_playlist ul li{
@@ -184,13 +186,17 @@
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
     font-size: 14px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     color: rgb(163, 160, 160);
     cursor: pointer;
 }
 .new_playlist ul{
+    width: 90%;
+    height: 110%;
     margin-left: -16px;
     margin-top: 20px;
+    
+    
 }
 .new_playlist ul li:hover{
     color: white;
@@ -199,9 +205,13 @@
 .foot_lateral_menu{
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
-    font-size: 15px;
+    font-size: 13px;
     margin-left: 15px;
     width: 70%;
+    height: 13%;
+    margin-top: 0px;
+    
+   
     
 }
 .foot_lateral_menu :first-child{
