@@ -210,8 +210,9 @@
 }
 .new_playlist{
     width: 80%;
-    height: 40%;
-    margin-left: 40px;
+    height: 200px;
+    margin-left: 25px;
+    
     
     
 }
@@ -225,10 +226,10 @@
     cursor: pointer;
 }
 .new_playlist ul{
-    width: 90%;
-    height: 100%;
-    margin-left: -16px;
+    width: 100%;
+    height: 200px;
     margin-top: 20px;
+    overflow-y: auto;
 }
 .new_playlist ul li:hover{
     color: white;
