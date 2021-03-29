@@ -212,10 +212,30 @@
     width: 80%;
     height: 200px;
     margin-left: 25px;
-    
-    
-    
+    overflow: hidden;
 }
+.recently{
+    width: calc(100% - 250px);
+    height: 200px;
+    background-color: blue;
+    position: absolute;
+    right: 0%;
+    top: 20%;
+}
+.cont-img-recent{
+    width: 100%;
+    height: 180px;
+    background-color: rgb(243, 182, 69);
+    margin-top: 20px;
+}
+.recently h1{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: white;
+    font-size: 27px;
+}
+
+
 .new_playlist ul li{
     list-style: none;
     font-family: 'Montserrat', sans-serif;
