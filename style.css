@@ -98,9 +98,8 @@
     background-color: black;
     color: lightgray;
     padding-top: 10px;
-    
-    
-    
+    display: flex;
+    flex-direction: column;
 }
 
 .cont_logo{
@@ -208,25 +207,13 @@
 .sec-span:hover{
     color: white;
 }
-.new_playlist{
-    width: 80%;
-    height: 200px;
-    margin-left: 25px;
-    overflow: hidden;
-}
+
 .recently{
     width: calc(100% - 250px);
-    height: 200px;
-    background-color: blue;
+    height: 220px;
     position: absolute;
     right: 0%;
     top: 20%;
-}
-.cont-img-recent{
-    width: 100%;
-    height: 180px;
-    background-color: rgb(243, 182, 69);
-    margin-top: 20px;
 }
 .recently h1{
     font-family: 'Montserrat', sans-serif;
@@ -234,7 +221,31 @@
     color: white;
     font-size: 27px;
 }
+.cont-img-recent{
+    width: 100%;
+    height: 220px;
+    background-color: rgb(243, 182, 69);
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+}
 
+.img-recent{
+    width: 16%;
+    height: 220px;
+    background-color: rgb(253, 241, 219);
+}
+.img-recent img{
+    width: 100%;
+    height: 90%;
+}
+
+.new_playlist{
+    width: 80%;
+    height: 65%;
+    margin-left: 25px;
+    overflow: hidden;
+}
 
 .new_playlist ul li{
     list-style: none;
@@ -247,7 +258,7 @@
 }
 .new_playlist ul{
     width: 100%;
-    height: 200px;
+    height: 90%;
     margin-top: 20px;
     overflow-y: auto;
 }
@@ -259,14 +270,13 @@
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
     font-size: 13px;
-    margin-left: 15px;
     width: 70%;
     height: 80px;
+    margin-left: 15px;
     
     
     
     
-   
     
 }
 .foot_lateral_menu :first-child{
