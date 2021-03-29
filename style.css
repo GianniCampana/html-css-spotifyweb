@@ -8,13 +8,16 @@
         display: table;
         clear: both;
     }
+    body{
+        position: relative;
+    }
 
 .all{
     width: 100%;
     height: calc(100vh - 80px);
-    background-color: rgb(0, 0, 25);
+    background-color: red;
     position: relative;
-
+    overflow-y: auto;
 }
 
 /* nav bar */
@@ -94,7 +97,7 @@
 #lateral_menu{
     position: relative;
     width: 250px;
-    height: calc(100% - 10px);
+    height: 153vh;
     background-color: black;
     color: lightgray;
     padding-top: 10px;
@@ -208,38 +211,6 @@
     color: white;
 }
 
-.recently{
-    width: calc(100% - 250px);
-    height: 220px;
-    position: absolute;
-    right: 0%;
-    top: 20%;
-}
-.recently h1{
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 700;
-    color: white;
-    font-size: 27px;
-}
-.cont-img-recent{
-    width: 100%;
-    height: 220px;
-    background-color: rgb(243, 182, 69);
-    margin-top: 20px;
-    display: flex;
-    justify-content: space-around;
-}
-
-.img-recent{
-    width: 16%;
-    height: 220px;
-    background-color: rgb(253, 241, 219);
-}
-.img-recent img{
-    width: 100%;
-    height: 90%;
-}
-
 .new_playlist{
     width: 80%;
     height: 65%;
@@ -270,19 +241,18 @@
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
     font-size: 13px;
-    width: 70%;
+    width: 250px;
     height: 80px;
-    margin-left: 15px;
-    
-    
-    
-    
-    
+    background-color: black;
+
 }
 .foot_lateral_menu :first-child{
+    width: 80%;
     padding-bottom: 10px;
     border-bottom: solid 1px grey;
     font-size: 14px;
+    color: rgb(146, 145, 145);
+    padding-left: 10px;
 }
 .foot_lateral_menu :first-child .fas{
      border-bottom: none;
@@ -296,6 +266,7 @@
     padding: 5px 6px ;
     border: none;
     margin-right: 5px;
+    margin-left: 18px;
 }
 .foot_lateral_menu .last-p{
     padding-top: 10px;
@@ -309,13 +280,142 @@
     font-weight: 600;
     color: white;
 }
-    
-
 
 /* /lateral menu */
 
 
+/* recently */
+.recently{
+    width: calc(100% - 250px);
+    height: 220px;
+    position: absolute;
+    right: 0%;
+    top: 20%;
+}
+.recently h1{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: white;
+    font-size: 27px;
+}
+.cont-img-recent{
+    width: 100%;
+    height: 240px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.img-recent{
+    width: 16%;
+    height: 240px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.img-recent img{
+    width: 100%;
+    height: 80%;
+}
+.img-recent h3{
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    text-align: center;
+    margin-top: 5px;
+}
+.img-recent p{
+    color: gray;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    text-align: center;
+}
+/* /recently */
+
+/* creato per john doe */
+.creat-for-johndoe{
+    width: calc(100% - 250px);
+    height: 220px;
+    position: absolute;
+    right: 0%;
+    top: 75%;
+}
+.cont-img-johndoe{
+    width: 100%;
+    height: 240px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: flex-start;
+}
+.cont-img-johndoe div{
+    margin-right: 10px;
+}
+
+.creat-for-johndoe h1{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: white;
+    font-size: 27px;
+}
+
+/* /creato per john doe */
+
+/* Artisti popolari */
+.artisti-popolari{
+    width: calc(100% - 250px);
+    height: 220px;
+    position: absolute;
+    right: 0%;
+    top: 123%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.cont-img-art-pop{
+    width: 100%;
+    height: 240px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: flex-start;
+}
+.cont-img-art-pop div{
+    margin-right: 10px;
+    border-radius: 50%;
+}
+.cont-img-art-pop div img{
+    margin-right: 10px;
+    border-radius: 50%;
+}
+.artisti-popolari h1{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: white;
+    font-size: 27px;
+}
+.artisti-popolari p{
+    color: gray;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+}
+.img-pop h3{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+/* /Artisti popolari */
+
+
 /* footer */
+footer{
+    width: 100%;
+    height: 80px;
+    position: fixed;
+    bottom: 0%;
+    z-index: 2;
+}
 
 .play_bar{
     width: 100%;
@@ -324,6 +424,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    
     
 }
 .song{
@@ -449,6 +550,7 @@
 .color-vol-bar:hover{
     background-color: greenyellow;
 }
+
 
 
 /* /footer */
