@@ -15,7 +15,7 @@ body {
 .all {
   width: calc(100% - 230px);
   height: calc(100vh - 80px);
-  background-color: rgb(185, 10, 10);
+  background-color: rgb(0, 0, 31);
   position: relative;
   overflow-y: auto;
   float: left;
@@ -387,7 +387,7 @@ body {
   display: flex;
   justify-content: flex-start;
 }
-.cont-img-johndoe div {
+.cont-img-johndoe .song_ {
   margin-right: 10px;
 }
 
@@ -410,6 +410,7 @@ body {
   background-repeat: no-repeat;
 }
 
+
 /* /creato per john doe */
 
 /* Artisti popolari */
@@ -417,7 +418,7 @@ body {
   width: 90%;
   height: 200px;
   margin-top: 140px;
-  margin-left: 20px;
+  
 }
 .cont-img-art-pop {
   width: 100%;
@@ -426,11 +427,11 @@ body {
   display: flex;
   justify-content: flex-start;
 }
-.cont-img-art-pop div {
+.cont-img-art-pop .song_ {
   margin-right: 10px;
   border-radius: 50%;
 }
-.cont-img-art-pop div img {
+.cont-img-art-pop .song_ img {
   margin-right: 10px;
   border-radius: 50%;
 }
@@ -446,18 +447,40 @@ body {
   font-weight: 600;
   font-size: 15px;
 }
+.img-recent-popolari {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    width: 100%;
+    height: 200px;
+    cursor: pointer;
+    border-radius: 50%;
+  }
+  .img-recent-popolari .far {
+    display: none;
+  }
+  .img-recent-popolari:hover .far {
+    display: block;
+  }
+  .img-recent-popolari:hover {
+    background-color: rgba(0, 0, 0, 0.6);
+  }
 
 .lana-del-ray {
   background-image: url(img/youg.jpeg);
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
+  border-radius: 50%;
 }
 .einaudi {
   background-image: url(img/einaudi.jpeg);
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
+  border-radius: 50%;
 }
 /* /Artisti popolari */
 
