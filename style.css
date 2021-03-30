@@ -13,19 +13,19 @@
     }
 
 .all{
-    width: 100%;
+    width: calc(100% - 230px);
     height: calc(100vh - 80px);
-    background-color: red;
+    background-color: rgb(0, 0, 29);
     position: relative;
     overflow-y: auto;
+    float: left;
 }
 
 /* nav bar */
 .nav_bar{
     height: 80px;
-    width: calc(100% - 250px);
+    width: calc(100% - 230px);
     background-color: rgba(0, 0, 0, 0.5);
-    margin-left: 250px;
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -60,9 +60,8 @@
 /* under nav */
 .under-nav{
     height: 50px;
-    width: calc(100% - 250px);
+    width: calc(100% - 230px);
     position: absolute;
-    right: 0px;
     top: 80px;
     display: flex;
     align-items: center;
@@ -96,13 +95,13 @@
 
 #lateral_menu{
     position: relative;
-    width: 250px;
-    height: 153vh;
+    width: 230px;
+    height: calc(100vh - 80px);
     background-color: black;
     color: lightgray;
     padding-top: 10px;
-    display: flex;
-    flex-direction: column;
+    float: left;
+    
 }
 
 .cont_logo{
@@ -112,12 +111,10 @@
     width: 100%;
     height: 70px;
 }
-
 .cont_logo img{
     margin-left: 13%;
     width: 56%;
 }
-
 .list_icons{
     width: 100%;
     height: 120px; 
@@ -130,9 +127,7 @@
     color: white;
     cursor: pointer;
 }
-
 .list_icons div a{
-    
     text-decoration: none;
     margin-bottom: 15px;
     font-family: 'Montserrat', sans-serif;
@@ -147,19 +142,16 @@
 .list_icons div a img{
     width: 12%;
 }
-
 .list_icons div a span{
     margin-top: 6px;
     margin-left: 5px;
 }
-
 .playlist{
     width: 100%;
     height: 50%;
     margin-left: -4px;
     position: relative;
 }
-
 .playlist h2{
 
     font-family: 'Montserrat', sans-serif;
@@ -175,7 +167,6 @@
     margin-top: 15px;
     position: relative;
 }
-
 .piu{
     cursor: pointer;
     width: 50px;
@@ -210,14 +201,12 @@
 .sec-span:hover{
     color: white;
 }
-
 .new_playlist{
     width: 80%;
-    height: 65%;
+    height: 100%;
     margin-left: 25px;
     overflow: hidden;
 }
-
 .new_playlist ul li{
     list-style: none;
     font-family: 'Montserrat', sans-serif;
@@ -229,7 +218,7 @@
 }
 .new_playlist ul{
     width: 100%;
-    height: 90%;
+    height: 100%;
     margin-top: 20px;
     overflow-y: auto;
 }
@@ -241,23 +230,27 @@
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
     font-size: 13px;
-    width: 250px;
+    width: 230px;
     height: 80px;
     background-color: black;
-
 }
 .foot_lateral_menu :first-child{
-    width: 80%;
-    padding-bottom: 10px;
+    width: 90%;
     border-bottom: solid 1px grey;
     font-size: 14px;
     color: rgb(146, 145, 145);
-    padding-left: 10px;
+    padding-bottom: 5px;
+    display: flex;
+    align-items: center;
+    
 }
+
 .foot_lateral_menu :first-child .fas{
      border-bottom: none;
-     margin-left: 4px;
-     margin-right: 10px;
+     width: 20px;
+     margin-left: 23px;
+     margin-right: 5px;
+     
 }
 .foot_lateral_menu .last-p  img{
     width: 17px;
@@ -265,32 +258,39 @@
     border-radius: 50%;
     padding: 5px 6px ;
     border: none;
-    margin-right: 5px;
-    margin-left: 18px;
+    margin-right: 10px;
+    margin-left: 20px;
+    margin-top: 2px;
+   
 }
 .foot_lateral_menu .last-p{
-    padding-top: 10px;
-    position: relative;
+    display: flex;
+    align-items: center;
+    padding-top: 6px;
+    
 }
 .foot_lateral_menu .last-p span{
-    position: absolute;
-    top: 35%;
-    left: 20%;
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
     color: white;
 }
-
+.nav-bottom{
+    height: 80px;
+    width: 230px;  
+}
+.nav-top{
+    width: 230px;
+    height: calc(100% - 80px);
+    
+}
 /* /lateral menu */
 
 
 /* recently */
 .recently{
-    width: calc(100% - 250px);
+    width: 100%;
     height: 220px;
-    position: absolute;
-    right: 0%;
-    top: 20%;
+    margin-top: 10%;
 }
 .recently h1{
     font-family: 'Montserrat', sans-serif;
@@ -338,11 +338,10 @@
 
 /* creato per john doe */
 .creat-for-johndoe{
-    width: calc(100% - 250px);
+    width: 100%;
     height: 220px;
-    position: absolute;
-    right: 0%;
-    top: 75%;
+    margin-top: 140px;
+    
 }
 .cont-img-johndoe{
     width: 100%;
@@ -366,12 +365,10 @@
 
 /* Artisti popolari */
 .artisti-popolari{
-    width: calc(100% - 250px);
+    width: 90%;
     height: 220px;
-    position: absolute;
-    right: 0%;
-    top: 123%;
-    margin-top: 20px;
+    margin-top: 140px;
+    margin-left: 20px;
     margin-bottom: 20px;
 }
 .cont-img-art-pop{
