@@ -1,571 +1,605 @@
-*{
-    margin:0;
-    padding:0;
-    }
+* {
+  margin: 0;
+  padding: 0;
+}
 
-    .clearfix::after{
-        content: "";
-        display: table;
-        clear: both;
-    }
-    body{
-        position: relative;
-    }
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+body {
+  position: relative;
+}
 
-.all{
-    width: calc(100% - 230px);
-    height: calc(100vh - 80px);
-    background-color: rgb(0, 0, 30);
-    position: relative;
-    overflow-y: auto;
-    float: left;
+.all {
+  width: calc(100% - 230px);
+  height: calc(100vh - 80px);
+  background-color: rgb(185, 10, 10);
+  position: relative;
+  overflow-y: auto;
+  float: left;
 }
 
 /* nav bar */
-.nav_bar{
-    height: 80px;
-    width: calc(100% - 230px);
-    background-color: rgba(0, 0, 0, 0.5);
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    position: fixed;
-    top: 0px;
-    
-    
+.nav_bar {
+  height: 80px;
+  width: calc(100% - 230px);
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  position: fixed;
+  top: 0px;
 }
-.btn{
-    height: 40px;
-    width: 200px;
-    margin-right: 50px;
-    border: solid 2px white;
-    border-radius: 40px;
-    color: white;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 500;
-    font-size: 13px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
+.btn {
+  height: 40px;
+  width: 200px;
+  margin-right: 50px;
+  border: solid 2px white;
+  border-radius: 40px;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 13px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
 }
-.btn:hover{
-  width: 225px; ;
+.btn:hover {
+  width: 225px;
   font-size: 15px;
   margin-right: 40px;
 }
 /* /nav bar */
 
-
 /* under nav */
-.under-nav{
-    height: 50px;
-    width: calc(100% - 230px);
-    position: absolute;
-    top: 80px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: gray;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 600;
-    font-size: 12px;
+.under-nav {
+  height: 50px;
+  width: calc(100% - 230px);
+  position: absolute;
+  top: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: gray;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 12px;
 }
-.under-nav p{
-  
+.under-nav p {
   margin-left: 20px;
   padding-bottom: 8px;
   cursor: pointer;
-  
 }
-.under-nav p:hover{
-    color: white;
+.under-nav p:hover {
+  color: white;
 }
-.under-nav p:active{
-    border-bottom: solid 2px greenyellow;
+.under-nav p:active {
+  border-bottom: solid 2px greenyellow;
 }
-
 
 /* /under nav */
 
-
-
-
 /* lateral menu */
 
-#lateral_menu{
-    position: relative;
-    width: 230px;
-    height: calc(100vh - 80px);
-    background-color: black;
-    color: lightgray;
-    padding-top: 10px;
-    float: left;
-    
+#lateral_menu {
+  position: relative;
+  width: 230px;
+  height: calc(100vh - 80px);
+  background-color: black;
+  color: lightgray;
+  padding-top: 10px;
+  float: left;
 }
 
-.cont_logo{
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    width: 100%;
-    height: 70px;
+.cont_logo {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  height: 70px;
 }
-.cont_logo img{
-    margin-left: 13%;
-    width: 56%;
+.cont_logo img {
+  margin-left: 13%;
+  width: 56%;
 }
-.list_icons{
-    width: 100%;
-    height: 120px; 
-    margin-top: 5%;
+.list_icons {
+  width: 100%;
+  height: 120px;
+  margin-top: 5%;
 }
-.list_icons div a:active{
-    border-left: solid 2px greenyellow;
+.list_icons div a:active {
+  border-left: solid 2px greenyellow;
 }
-.list_icons div a:hover{
-    color: white;
-    cursor: pointer;
+.list_icons div a:hover {
+  color: white;
+  cursor: pointer;
 }
-.list_icons div a{
-    text-decoration: none;
-    margin-bottom: 15px;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 500;
-    font-size: 14px;
-    display: flex;
-    color: grey;
-    padding-left: 20px;
-    padding-top: 1px;
-    padding-bottom: 1px;
+.list_icons div a {
+  text-decoration: none;
+  margin-bottom: 15px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  display: flex;
+  color: grey;
+  padding-left: 20px;
+  padding-top: 1px;
+  padding-bottom: 1px;
 }
-.list_icons div a img{
-    width: 12%;
+.list_icons div a img {
+  width: 12%;
 }
-.list_icons div a span{
-    margin-top: 6px;
-    margin-left: 5px;
+.list_icons div a span {
+  margin-top: 6px;
+  margin-left: 5px;
 }
-.playlist{
-    width: 100%;
-    height: 50%;
-    margin-left: -4px;
-    position: relative;
+.playlist {
+  width: 100%;
+  height: 50%;
+  margin-left: -4px;
+  position: relative;
 }
-.playlist h2{
-
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 600;
-    margin-left: 10%;
-    margin-top: 25px;
-    font-size: 16px;
+.playlist h2 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  margin-left: 10%;
+  margin-top: 25px;
+  font-size: 16px;
 }
-.crea_playlist{
-    cursor: pointer;
-    width: 100%;
-    height: 50px;
-    margin-top: 15px;
-    position: relative;
+.crea_playlist {
+  cursor: pointer;
+  width: 100%;
+  height: 50px;
+  margin-top: 15px;
+  position: relative;
 }
-.piu{
-    cursor: pointer;
-    width: 50px;
-    height: 50px;
-    margin-left: 11%;
-    background-color: rgb(211, 211, 211);
-    color: black;
-    display: flex;
-    justify-content: center;
-    font-size: 40px;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 700; 
-    display: inline;
-    padding-left: 8px;
-    padding-right: 8px;
+.piu {
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  margin-left: 11%;
+  background-color: rgb(211, 211, 211);
+  color: black;
+  display: flex;
+  justify-content: center;
+  font-size: 40px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  display: inline;
+  padding-left: 8px;
+  padding-right: 8px;
 }
-.piu:hover{
-    background-color: white;
+.piu:hover {
+  background-color: white;
 }
-.sec-span{
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 500;
-    margin-left: 10px;
-    margin-top: -10px;
-    padding-bottom: 10px;
-    padding-top: 10px;
-    position: absolute;
-    top: 15px;
-    left: 70px;
-    cursor: pointer;
+.sec-span {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  margin-left: 10px;
+  margin-top: -10px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  position: absolute;
+  top: 15px;
+  left: 70px;
+  cursor: pointer;
 }
-.sec-span:hover{
-    color: white;
+.sec-span:hover {
+  color: white;
 }
-.new_playlist{
-    width: 80%;
-    height: 100%;
-    margin-left: 25px;
-    overflow: hidden;
+.new_playlist {
+  width: 80%;
+  height: 100%;
+  margin-left: 25px;
+  overflow: hidden;
 }
-.new_playlist ul li{
-    list-style: none;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 500;
-    font-size: 14px;
-    margin-bottom: 10px;
-    color: rgb(163, 160, 160);
-    cursor: pointer;
+.new_playlist ul li {
+  list-style: none;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  margin-bottom: 10px;
+  color: rgb(163, 160, 160);
+  cursor: pointer;
 }
-.new_playlist ul{
-    width: 100%;
-    height: 100%;
-    margin-top: 20px;
-    overflow-y: auto;
+.new_playlist ul {
+  width: 100%;
+  height: 100%;
+  margin-top: 20px;
+  overflow-y: auto;
 }
-.new_playlist ul li:hover{
-    color: white;
-}
-
-.foot_lateral_menu{
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 500;
-    font-size: 13px;
-    width: 230px;
-    height: 80px;
-    background-color: black;
-}
-.foot_lateral_menu :first-child{
-    width: 90%;
-    border-bottom: solid 1px grey;
-    font-size: 14px;
-    color: rgb(146, 145, 145);
-    padding-bottom: 5px;
-    display: flex;
-    align-items: center;
-    cursor: pointer;
+.new_playlist ul li:hover {
+  color: white;
 }
 
-.foot_lateral_menu :first-child .fas{
-     border-bottom: none;
-     width: 20px;
-     margin-left: 23px;
-     margin-right: 5px;   
+.foot_lateral_menu {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 13px;
+  width: 230px;
+  height: 80px;
+  background-color: black;
+}
+.foot_lateral_menu :first-child {
+  width: 90%;
+  border-bottom: solid 1px grey;
+  font-size: 14px;
+  color: rgb(146, 145, 145);
+  padding-bottom: 5px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
 }
 
-.foot_lateral_menu :first-child span:hover{
-    color: white;
+.foot_lateral_menu :first-child .fas {
+  border-bottom: none;
+  width: 20px;
+  margin-left: 23px;
+  margin-right: 5px;
 }
-.foot_lateral_menu .last-p  img{
-    width: 17px;
-    background-color: gray;
-    border-radius: 50%;
-    padding: 5px 6px ;
-    border: none;
-    margin-right: 10px;
-    margin-left: 20px;
-    margin-top: 2px;
-   
+
+.foot_lateral_menu :first-child span:hover {
+  color: white;
 }
-.foot_lateral_menu .last-p{
-    display: flex;
-    align-items: center;
-    padding-top: 6px;
-    
+.foot_lateral_menu .last-p img {
+  width: 17px;
+  background-color: gray;
+  border-radius: 50%;
+  padding: 5px 6px;
+  border: none;
+  margin-right: 10px;
+  margin-left: 20px;
+  margin-top: 2px;
 }
-.foot_lateral_menu .last-p span{
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 600;
-    color: white;
+.foot_lateral_menu .last-p {
+  display: flex;
+  align-items: center;
+  padding-top: 6px;
 }
-.nav-bottom{
-    height: 80px;
-    width: 230px;  
+.foot_lateral_menu .last-p span {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  color: white;
 }
-.nav-top{
-    width: 230px;
-    height: calc(100% - 80px);
-    
+.nav-bottom {
+  height: 80px;
+  width: 230px;
+}
+.nav-top {
+  width: 230px;
+  height: calc(100% - 80px);
 }
 /* /lateral menu */
 
-
 /* recently */
-.recently{
-    width: 100%;
-    height: 220px;
-    margin-top: 10%;
+.recently {
+  width: 100%;
+  height: 220px;
+  margin-top: 10%;
 }
-.recently h1{
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 700;
-    color: white;
-    font-size: 27px;
+.recently h1 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  color: white;
+  font-size: 27px;
 }
-.cont-img-recent{
-    width: 100%;
-    height: 240px;
-    margin-top: 20px;
-    display: flex;
-    justify-content: space-around;
+.cont-img-recent {
+  width: 100%;
+  height: 240px;
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-around;
 }
-.song_{
-    width: 200px;
-    margin-left: 5px;
+.song_ {
+  width: 200px;
+  margin-left: 5px;
 }
-.song_ h3{
-    cursor: pointer;
-    color: white;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 500;
-    font-size: 16px;
-    text-align: center;
-    margin-top: 5px;
+.song_ h3 {
+  cursor: pointer;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  text-align: center;
+  margin-top: 5px;
 }
-.song_ p{
-    
-    color: gray;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 400;
-    font-size: 14px;
-    text-align: center;
-}
-
-   
-
-.img-recent{
-    width: 100%;
-    height: 200px;
-    cursor: pointer;
-}
-.img-recent:hover{
-    background-color: black;
+.song_ p {
+  color: gray;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  text-align: center;
 }
 
-.img-recent img{
-    width: 100%;
-    height: 100%;
+.img-recent {
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+  width: 100%;
+  height: 200px;
+  cursor: pointer;
+}
+.img-recent .far {
+  display: none;
+}
+.img-recent:hover .far {
+  display: block;
+}
+.img-recent:hover {
+  background-color: rgba(0, 0, 0, 0.6);
 }
 
+.metal {
+  background-image: url(img/metal_lifting.jpg);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.stranger {
+  background-image: url(img/stranger.jpeg);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.quiet {
+  background-image: url(img/aquietplace.jpeg);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.split {
+  background-image: url(img/split.jpeg);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.cure {
+  background-image: url(img/cure.jpeg);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.sinister_ {
+  background-image: url(img/sinister.jpeg);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
 
 /* /recently */
 
 /* creato per john doe */
-.creat-for-johndoe{
-    width: 100%;
-    height: 220px;
-    margin-top: 140px;
-    
+.creat-for-johndoe {
+  width: 100%;
+  height: 220px;
+  margin-top: 140px;
 }
-.cont-img-johndoe{
-    width: 100%;
-    height: 240px;
-    margin-top: 20px;
-    display: flex;
-    justify-content: flex-start;
+.cont-img-johndoe {
+  width: 100%;
+  height: 200px;
+  margin-top: 20px;
+  display: flex;
+  justify-content: flex-start;
 }
-.cont-img-johndoe div{
-    margin-right: 10px;
+.cont-img-johndoe div {
+  margin-right: 10px;
 }
 
-.creat-for-johndoe h1{
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 700;
-    color: white;
-    font-size: 27px;
+.creat-for-johndoe h1 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  color: white;
+  font-size: 27px;
+}
+.radar {
+  background-image: url(img/radar.jpeg);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.daily {
+  background-image: url(img/mixdaily.jpeg);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 /* /creato per john doe */
 
 /* Artisti popolari */
-.artisti-popolari{
-    width: 90%;
-    height: 220px;
-    margin-top: 140px;
-    margin-left: 20px;
-    margin-bottom: 20px;
+.artisti-popolari {
+  width: 90%;
+  height: 200px;
+  margin-top: 140px;
+  margin-left: 20px;
 }
-.cont-img-art-pop{
-    width: 100%;
-    height: 240px;
-    margin-top: 20px;
-    display: flex;
-    justify-content: flex-start;
+.cont-img-art-pop {
+  width: 100%;
+  height: 200px;
+  margin-top: 20px;
+  display: flex;
+  justify-content: flex-start;
 }
-.cont-img-art-pop div{
-    margin-right: 10px;
-    border-radius: 50%;
+.cont-img-art-pop div {
+  margin-right: 10px;
+  border-radius: 50%;
 }
-.cont-img-art-pop div img{
-    margin-right: 10px;
-    border-radius: 50%;
+.cont-img-art-pop div img {
+  margin-right: 10px;
+  border-radius: 50%;
 }
-.artisti-popolari h1{
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 700;
-    color: white;
-    font-size: 27px;
+.artisti-popolari h1 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  color: white;
+  font-size: 27px;
 }
-.artisti-popolari p{
-    color: gray;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 600;
-    font-size: 15px;
+.artisti-popolari p {
+  color: gray;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 15px;
 }
-.img-pop h3{
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 700;
+
+.lana-del-ray {
+  background-image: url(img/youg.jpeg);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.einaudi {
+  background-image: url(img/einaudi.jpeg);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 /* /Artisti popolari */
 
-
 /* footer */
-footer{
-    width: 100%;
-    height: 80px;
-    position: fixed;
-    bottom: 0%;
-    z-index: 2;
+footer {
+  width: 100%;
+  height: 80px;
+  position: fixed;
+  bottom: 0%;
+  z-index: 2;
 }
 
-.play_bar{
-    width: 100%;
-    height: 80px;
-    background-color: rgb(43, 42, 42);
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    
-    
+.play_bar {
+  width: 100%;
+  height: 80px;
+  background-color: rgb(43, 42, 42);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
-.song{
-    height: 60px;
-    width: 250px;
-    display: flex;
-    align-items: center;
-    margin-left: 15px;
-    
+.song {
+  height: 60px;
+  width: 250px;
+  display: flex;
+  align-items: center;
+  margin-left: 15px;
 }
-.song p{
-    color: gray;
+.song p {
+  color: gray;
 }
 .song p .fa-heart,
-.song p .fa-folder{
-    margin-top: 13px;
-    cursor: pointer;
+.song p .fa-folder {
+  margin-top: 13px;
+  cursor: pointer;
 }
 .song p .fa-heart:hover,
-.song p .fa-folder:hover{
-    color: white;
+.song p .fa-folder:hover {
+  color: white;
 }
-.song p .fa-heart{
-    margin-left: 25px;
+.song p .fa-heart {
+  margin-left: 25px;
 }
-.name_song{
-    margin-left: 10px;
+.name_song {
+  margin-left: 10px;
 }
-.name_song :first-child{
-    color: white;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 500;
-    font-size: 13px;
+.name_song :first-child {
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 13px;
 }
-.name_song :last-child{
-    color: gray;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 400;
-    font-size: 13px;
-    margin-left: -1px;
+.name_song :last-child {
+  color: gray;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+  margin-left: -1px;
 }
-.song img{
-    width: 60px;
-    display: inline;
+.song img {
+  width: 60px;
+  display: inline;
 }
-.center{
-    height: 100%;
-    width: 500px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-
+.center {
+  height: 100%;
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
-.comandi{
-    margin-top: 15px;
-    color: white;
-    display: flex;
-    align-items: center;
+.comandi {
+  margin-top: 15px;
+  color: white;
+  display: flex;
+  align-items: center;
 }
 
 .comandi .fas,
-.comandi .far{
-    margin-left: 20px;
-    cursor: pointer;
+.comandi .far {
+  margin-left: 20px;
+  cursor: pointer;
 }
-.comandi .fa-play-circle{
-    font-size: 30px;
-    
-    
+.comandi .fa-play-circle {
+  font-size: 30px;
 }
-.cont-rep-bar{
-    height: 100%;
-    width: 550px;
-    display: flex;
-    align-items: center;
-    color: white;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 500;
-    font-size: 12px;
-    margin-top: -10px;
+.cont-rep-bar {
+  height: 100%;
+  width: 550px;
+  display: flex;
+  align-items: center;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  margin-top: -10px;
 }
-.rep-bar{
-    width: 500px;
-    height: 3px;
-    border-radius: 5px;
-    background-color: rgb(110, 110, 110);
-    margin-left: 10px;
-    margin-right: 10px;
-    cursor: pointer;
+.rep-bar {
+  width: 500px;
+  height: 3px;
+  border-radius: 5px;
+  background-color: rgb(110, 110, 110);
+  margin-left: 10px;
+  margin-right: 10px;
+  cursor: pointer;
 }
-.color-bar{
-    height: 100%;
-    width: 30%;
-    background-color: lightgray;
-    border-radius: 5px;
+.color-bar {
+  height: 100%;
+  width: 30%;
+  background-color: lightgray;
+  border-radius: 5px;
 }
-.color-bar:hover{
-   background-color: greenyellow;
-
+.color-bar:hover {
+  background-color: greenyellow;
 }
 
-.volume{
-    width: 170px;
-    height: 100%;
-    color: white;
-    display: flex;
-    align-items: center;
-    font-size: 13px;
+.volume {
+  width: 170px;
+  height: 100%;
+  color: white;
+  display: flex;
+  align-items: center;
+  font-size: 13px;
 }
-.volume .fas{
-    margin-right: 10px;
-    cursor: pointer;
+.volume .fas {
+  margin-right: 10px;
+  cursor: pointer;
 }
-.vol-bar{
-    width: 90px;
-    height: 4px;
-    background-color: gray;
-    border-radius: 5px;
-    cursor: pointer;
+.vol-bar {
+  width: 90px;
+  height: 4px;
+  background-color: gray;
+  border-radius: 5px;
+  cursor: pointer;
 }
-.color-vol-bar{
-    width: 30%;
-    height: 100%;
-    background-color: lightgray;
-    border-radius: 5px;
+.color-vol-bar {
+  width: 30%;
+  height: 100%;
+  background-color: lightgray;
+  border-radius: 5px;
 }
-.color-vol-bar:hover{
-    background-color: greenyellow;
+.color-vol-bar:hover {
+  background-color: greenyellow;
 }
-
-
 
 /* /footer */
